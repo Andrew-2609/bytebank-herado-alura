@@ -1,5 +1,6 @@
 package lessons;
 
+import models.Funcionario;
 import models.Gerente;
 
 public class ControleBonificacao {
@@ -8,6 +9,11 @@ public class ControleBonificacao {
 
     public void registrarBonificacao(Gerente gerente) {
         double bonificacao = gerente.getBonificacao();
+        this.soma += bonificacao;
+    }
+
+    public void registrarBonificacao(Funcionario funcionario) {
+        double bonificacao = funcionario.getBonificacao();
         this.soma += bonificacao;
     }
 
