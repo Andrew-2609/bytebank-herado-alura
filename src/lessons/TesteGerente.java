@@ -20,5 +20,7 @@ public class TesteGerente {
         if (gerente.autenticar(4432)) {
             System.out.println("As senhas batem.");
         }
+
+        System.out.println(gerente.getBonificacao());
     }
 }
