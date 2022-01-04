@@ -1,0 +1,6 @@
+# IntelliJ IDEA
+.idea
+bytebank-herdado-alura.iml
+
+# Build output
+out/
