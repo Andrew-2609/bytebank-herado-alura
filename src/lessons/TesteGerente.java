@@ -15,8 +15,6 @@ public class TesteGerente {
 
         gerente.setSenha(1234);
 
-        System.out.println(gerente.getSenha());
-
         if (gerente.autenticar(4432)) {
             System.out.println("As senhas batem.");
         }
