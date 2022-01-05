@@ -1,6 +1,6 @@
 package models;
 
-public class Gerente extends FuncionarioAutenticavel {
+public class Gerente extends Autenticavel {
     public double getBonificacao() {
         return super.getSalario();
     }
