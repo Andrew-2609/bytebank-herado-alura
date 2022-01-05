@@ -1,15 +1,9 @@
 package models;
 
-public abstract class Autenticavel extends Funcionario {
+public interface Autenticavel {
 
-    private int senha;
+    boolean autenticar(int senha);
 
-    public boolean autenticar(int senha) {
-        return this.senha == senha;
-    }
-
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
+    void setSenha(int senha);
 
 }
