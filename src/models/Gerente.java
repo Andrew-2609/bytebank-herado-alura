@@ -1,8 +1,14 @@
 package models;
 
+import utils.AutenticacaoUtil;
+
 public class Gerente extends Funcionario implements Autenticavel {
 
-    private int senha;
+    private final AutenticacaoUtil autenticador;
+
+    public Gerente() {
+        this.autenticador = new AutenticacaoUtil();
+    }
 
     public double getBonificacao() {
         return super.getSalario();
@@ -10,12 +16,12 @@ public class Gerente extends Funcionario implements Autenticavel {
 
     @Override
     public boolean autenticar(int senha) {
-        return this.senha == senha;
+        return this.autenticador.autenticar(senha);
     }
 
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.autenticador.setSenha(senha);
     }
 
 }
