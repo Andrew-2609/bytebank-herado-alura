@@ -1,7 +1,7 @@
 package lessons;
 
+import models.ControleBonificacao;
 import models.EditorDeVideos;
-import models.Funcionario;
 import models.Gerente;
 
 public class TesteReferencias {

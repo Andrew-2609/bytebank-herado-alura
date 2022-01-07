@@ -1,4 +1,4 @@
-package lessons;
+package models;
 
 import models.Funcionario;
 
@@ -14,4 +14,5 @@ public class ControleBonificacao {
     public double getSoma() {
         return this.soma;
     }
+
 }
